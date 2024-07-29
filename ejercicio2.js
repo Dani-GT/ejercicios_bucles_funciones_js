@@ -10,6 +10,19 @@ const movies = [
     { title: 'Fight Club', releaseYear: 1999 },
     { title: 'Forrest Gump', releaseYear: 1994 }
   ];
+   const after2000 = {};
+   const before2000 = {};
+   let movie = 1;
+
+   for (const movie of movies) {
+    if(movie.releaseYear >= 2000){
+      after2000 [movie]++;
+    } else {
+      before2000 [movie]++;
+    }
+   }
+
+   console.log(after2000)
+   console.log(before2000)
   
-  // Añade tu código de bucle aquí
   
