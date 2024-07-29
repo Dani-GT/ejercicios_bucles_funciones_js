@@ -11,5 +11,7 @@ const cartoons = [
     { name: "Dexter's Laboratory", debut: 1996 }
   ];
   
-  // Añade tu código de bucle aquí
+cartoons.sort ((a, b) => a.debut - b.debut);
+console.log(cartoons [0]);
+
   

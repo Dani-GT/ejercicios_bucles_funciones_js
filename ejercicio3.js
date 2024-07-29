@@ -13,7 +13,12 @@ const songs = [
   ];
   const rockPlaylist = [];
   
-  // Añade tu código de bucle aquí
+ for (const song of songs) {
+  if(song.duration > 5){
+    rockPlaylist.push(song)
+  }
+ }
+ console.log(rockPlaylist)
   
   
   
