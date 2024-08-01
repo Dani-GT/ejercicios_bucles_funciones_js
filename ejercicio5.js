@@ -11,6 +11,17 @@ const albums = [
     { title: 'The Joshua Tree', genre: 'Rock', duration: 50.11 }
   ];
   
-  // Añade tu código de bucle aquí
+  const albumRock = [];
+
+  for (const single of albums) {
+    if(single.genre.includes ("Rock")){
+      albumRock.push(single)
+    }
+    var duracionTotal = albumRock.reduce((total, single) => total + single.duration, 0);
+  }
+  console.log(duracionTotal)
+
+  
+  
   
   

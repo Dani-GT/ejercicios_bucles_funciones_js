@@ -12,6 +12,16 @@ const starWarsMovies = [
     { title: 'Solo', releaseYear: 2018 }
   ];
   
-  // Añade tu código de bucle aquí
-  
+
+ const dec70 = starWarsMovies.filter(movie => movie.releaseYear >= 1970 && movie.releaseYear < 1980);
+ const dec80 = starWarsMovies.filter(movie => movie.releaseYear >= 1980 && movie.releaseYear < 1990);
+ const dec90 = starWarsMovies.filter(movie => movie.releaseYear >= 1990 && movie.releaseYear < 2000);
+ const dec00 = starWarsMovies.filter(movie => movie.releaseYear >= 2000 && movie.releaseYear < 2010);
+ const dec10 = starWarsMovies.filter(movie => movie.releaseYear >= 2010 && movie.releaseYear < 2020);
+
+ console.log("Decada de los 70'"+ dec70)
+ console.log("Decada de los 80'"+ dec80)
+ console.log("Decada de los 90'"+ dec90)
+ console.log("Decada de los 00'"+ dec00)
+ console.log("Decada de los 10'"+ dec10)
   
