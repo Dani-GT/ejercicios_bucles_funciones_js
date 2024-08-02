@@ -19,9 +19,9 @@ const starWarsMovies = [
  const dec00 = starWarsMovies.filter(movie => movie.releaseYear >= 2000 && movie.releaseYear < 2010);
  const dec10 = starWarsMovies.filter(movie => movie.releaseYear >= 2010 && movie.releaseYear < 2020);
 
- console.log("Decada de los 70'"+ dec70)
- console.log("Decada de los 80'"+ dec80)
- console.log("Decada de los 90'"+ dec90)
- console.log("Decada de los 00'"+ dec00)
- console.log("Decada de los 10'"+ dec10)
+ console.log("Decada de los 70'", dec70)
+ console.log("Decada de los 80'", dec80)
+ console.log("Decada de los 90'", dec90)
+ console.log("Decada de los 00'", dec00)
+ console.log("Decada de los 10'", dec10)
   
