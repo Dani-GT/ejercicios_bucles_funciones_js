@@ -12,7 +12,14 @@ const movies = [
   ];
   
   function averageMovieDuration(movies) {
-    // insert code
+    const moviesNumber = movies.length;
+    let totalMinutes = 0;
+
+    for (const movie of movies) {
+      totalMinutes += movie.duration; 
+    }
+    const average = totalMinutes/moviesNumber;
+    console.log(average)
   }
-  
-  
+   
+  averageMovieDuration(movies);

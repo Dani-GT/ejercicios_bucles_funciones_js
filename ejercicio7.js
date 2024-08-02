@@ -11,5 +11,17 @@ const tracks = [
     { title: 'Stairway to Heaven', genre: 'Rock' }
   ];
   
-  // Añade tu código de bucle aquí
+  const music = {};
+
+for (const single of tracks) {
+  const genre = single.genre;
+  const title = single.title;
+
+  if (!music[genre]) {
+    music[genre] = [];
+  }
+  music[genre].push(title);
+}
+
+console.log(music);
   

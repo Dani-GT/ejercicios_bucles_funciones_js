@@ -12,7 +12,12 @@ const capitals = {
   };
   
   function getCapital(country) {
-    // insert code
+    if(capitals[country]){
+      console.log("La capital de " + country + " es " + capitals[country])
+    } else {
+      console.log("No tenemos ese pais en nuestra base de datos")
+    }
   }
   
-  
+  getCapital("France");
+  getCapital("Japan");

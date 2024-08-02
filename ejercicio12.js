@@ -11,7 +11,18 @@ const mutants = [
     { name: 'Nightcrawler', power: 'teleportation' }
   ];
   
-  function findMutantByPower(mutants, power) {
-    // insert code
+  function findMutantByPower(mutantList, power) {
+    const foundMutant = [];
+    for (const mutant of mutantList) {
+      if(mutant.power === power) {
+        foundMutant.push(mutant);
+      }
+    }
+    if(foundMutant.length){
+    console.log(foundMutant)
+    } else{
+      console.log("No encontrado")
+    }
   }
   
+  findMutantByPower(mutants, "power absorption")

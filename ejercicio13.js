@@ -11,7 +11,25 @@ const actors = [
     { name: 'Cate Blanchett', born: 1969 }
   ];
   
-  function calculateActorsAges(actors) {
-    // insert code
+  function calculateActorsAges(actorsList) {
+    //Creamos un array vacio donde almacenaremos nuevos objetos
+    const actorsByAge = [];
+    //Creamos una nueva instancia de Date para poder usar los métodos de Date
+    const date = new Date();
+    //Creamos una constante que almacene el año del sistema
+    const actualYear = date.getFullYear();
+    //Se puede hacer en una linea
+    //const actualYear = new Date().getFullYear();
+    for (const actor of actorsList) {
+      const item = {
+        name: actor.name,
+        age: actualYear - actor.born,
+      };
+      actorsByAge.push(item)
+    }
+  
+    console.log(actorsByAge);
   }
+  
+  calculateActorsAges(actors);
   
