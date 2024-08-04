@@ -12,7 +12,11 @@ const xMen = [
   ];
   
   function findOldestXMen(xMen) {
-    // insert code
+   
+    return xMen.reduce((oldest, mutant) => {
+      return (mutant.year < oldest.year) ? mutant : oldest;
+    });
+
   }
-  
-  
+  const oldestMember = findOldestXMen(xMen);
+  console.log(`El miembro más antiguo es ${oldestMember.name}, apareció en el año ${oldestMember.year}.`)
