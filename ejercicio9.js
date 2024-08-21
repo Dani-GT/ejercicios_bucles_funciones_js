@@ -1,3 +1,6 @@
+// Crea una función que reciba un array de objetos representando a varios miembros de los X-Men y su año de aparición. La función debe retornar el miembro más antiguo.
+// Utiliza este array para probar tu función.
+
 const xMen = [
     { name: 'Wolverine', year: 1974 },
     { name: 'Cyclops', year: 1963 },

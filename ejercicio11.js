@@ -1,3 +1,7 @@
+// Escribe una función que calcule el promedio de duración de una lista de películas.
+// Recibe un array de películas, cada una con su duración en minutos.
+// La función debe devolver el promedio de duración de todas las películas.
+
 const movies = [
     { title: 'Inception', duration: 148 },
     { title: 'The Dark Knight', duration: 152 },

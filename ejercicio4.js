@@ -1,3 +1,6 @@
+// Utiliza un bucle para encontrar la serie de dibujos animados más antigua en el array y guarda su nombre en una variable.
+// Imprime el nombre por consola.
+
 const cartoons = [
    
     { name: 'Bugs Bunny', debut: 1938 },
